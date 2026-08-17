@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const navLinks = ['Features', 'How It Works', 'Mentors', 'Testimonials', 'FAQ']
 
-export default function Navbar() {
+export default function Navbar({ onOpenContact }) {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 
@@ -45,12 +45,13 @@ export default function Navbar() {
         {/* Right */}
         <div className="hidden md:flex items-center gap-4 flex-shrink-0">
           <a 
-            href="#" 
-            className="text-zinc-400 hover:text-white text-sm font-medium transition-colors px-4 py-2"
+            href="#footer"
+            className="text-zinc-400 hover:text-white text-sm font-medium transition-colors px-4 py-2 cursor-pointer"
           >
-            Login
+            Support
           </a>
           <motion.button
+            onClick={onOpenContact}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="border-2 border-violet-500/40 bg-[#1A1A2E]/50 backdrop-blur-sm text-violet-300 
@@ -102,6 +103,7 @@ export default function Navbar() {
               transition={{ delay: navLinks.length * 0.1 }}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
+              onClick={() => { setMobileOpen(false); onOpenContact(); }}
               className="border-2 border-violet-500/40 bg-[#1A1A2E]/50 backdrop-blur-sm text-violet-300 
                 hover:text-violet-200 hover:border-violet-400/60 hover:bg-[#1A1A2E]/70 
                 font-semibold rounded-full px-10 py-3.5 mt-4 cursor-pointer transition-all duration-300

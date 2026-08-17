@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-export default function CTASection() {
+export default function CTASection({ onOpenContact }) {
   return (
     <section className="relative py-32 md:py-40 px-8 md:px-16 lg:px-20 bg-[#08080F] overflow-hidden text-center">
       {/* Floating orbs */}
@@ -51,6 +51,7 @@ export default function CTASection() {
           className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
         >
           <motion.button
+            onClick={onOpenContact}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="bg-violet-600 hover:bg-violet-500 text-white font-semibold uppercase 
@@ -60,6 +61,7 @@ export default function CTASection() {
             Start Your Sprint
           </motion.button>
           <motion.button
+            onClick={onOpenContact}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="border-2 border-violet-500/30 text-violet-200 font-semibold uppercase tracking-wide 

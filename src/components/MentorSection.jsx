@@ -5,26 +5,26 @@ const mentors = [
     name: 'Karthik Reddy',
     role: 'Sr. Engineering Lead @ Google',
     body: 'Distributed systems expert. 200+ engineers mentored through FAANG interview loops.',
-    avatar: 'https://images.media.io/ai-images/tech-professional-avatar.png',
+    avatar: '/male.png',
   },
   
   {
     name: 'shiva Sharma',
     role: 'Principal PM @ Airbnb',
     body: 'Portfolio storytelling guru. Helps PMs craft narratives that land top-tier roles.',
-    avatar: 'https://imgs.search.brave.com/KIdelLEZZnsLYfY5IOJw76jDlZwHNusCAdieCkasj9g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMubWVkaWEuaW8v/YWktaW1hZ2VzL3Rl/Y2gtY2FzdWFsLW1h/bGUtYXZhdGFyLnBu/Zw',
+    avatar: '/male.png',
   },
   {
     name: 'Anjali Patel',
     role: 'Design Director @ Meta',
     body: 'Design systems architect. Guides designers from junior to staff-level portfolios.',
-    avatar: 'https://imgs.search.brave.com/zdAnNN2j_U-beiv-Oz7TbiMZfbSsZWuyrtLorH9Mkp4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWd2/My5mb3Rvci5jb20v/aW1hZ2VzL2dhbGxl/cnkvZ2VuZXJhdGUt/YS1yZWFsaXN0aWMt/YWktYXZhdGFyLW9m/LWEtcHJvZmVzc2lv/bmFsLXdvbWFuLWlu/LWZvdG9yLmpwZw',
+    avatar: '/female.png',
   },
   {
     name: 'Divya Krishna',
     role: 'Head of Talent @ Stripe',
     body: 'Salary negotiation expert. Average uplift: 35% above initial offer.',
-    avatar: 'https://imgs.search.brave.com/MTKOxnLyg8sN7IzkGVTehrpFWu3U5IKe_Ffwqlk2ZfY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMubWVkaWEuaW8v/YWktaW1hZ2VzL2Ny/ZWF0aXZlLXByb2Zl/c3Npb25hbC1mZW1h/bGUtYXZhdGFyLnBu/Zw',
+    avatar: '/female.png',
   },
 ]
 
@@ -121,10 +121,6 @@ export default function MentorSection() {
                   <h4 className="text-sm font-bold text-white">{m.name}</h4>
                   <p className="text-xs text-violet-400 mt-0.5">{m.role}</p>
                 </div>
-              </div>
-              <div className="flex items-center gap-1.5 mt-3 text-xs text-green-400">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-400" style={{ animation: 'pulseDot 2s ease-in-out infinite' }} />
-                Available
               </div>
               <p className="text-xs text-zinc-400 mt-3 leading-relaxed">{m.body}</p>
             </motion.div>

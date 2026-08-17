@@ -55,7 +55,7 @@ const statItem = {
 
 const barHeights = [50, 75, 40, 90, 65, 80, 55, 70, 95, 60, 85, 45]
 
-export default function HeroSection() {
+export default function HeroSection({ onOpenContact }) {
   const heroChars = '5x Speed.'.split('')
   const sectionRef = useRef(null)
 
@@ -186,6 +186,7 @@ export default function HeroSection() {
           className="flex flex-col sm:flex-row items-center gap-4 justify-center"
         >
           <motion.button
+            onClick={onOpenContact}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="bg-violet-600 hover:bg-violet-500 text-white font-semibold rounded-full px-10 py-4 text-base cursor-pointer transition-all duration-300 shadow-lg shadow-violet-600/30 hover:shadow-violet-500/50"
@@ -193,13 +194,16 @@ export default function HeroSection() {
             Accelerate Your Career
           </motion.button>
 
-          <motion.button
+          <motion.a
+            href="https://www.instagram.com/reel/DaxfrzcBQ50/?igsh=c3JjMjU3OWhrZGI1"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="border-2 border-violet-500/30 text-violet-200 font-semibold rounded-full px-10 py-4 text-base transition-all duration-300 cursor-pointer hover:border-violet-400/50 hover:bg-violet-500/5 hover:text-white"
           >
             Watch Demo ▶
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         {/* ── stats row ── */}
