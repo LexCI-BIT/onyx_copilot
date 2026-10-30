@@ -256,7 +256,7 @@ export default function HeroSection({ onOpenContact }) {
                   className="flex-1 rounded-lg h-7 ml-4 flex items-center px-4"
                   style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.06)' }}
                 >
-                  <span className="text-[11px] text-zinc-600 font-medium">🔒 onyx-jobcopilot.ai/dashboard</span>
+                  <span className="text-[11px] text-zinc-600 font-medium">🔒 onyx-copilot.ai/dashboard</span>
                 </div>
               </div>
 

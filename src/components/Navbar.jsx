@@ -27,7 +27,7 @@ export default function Navbar() {
       >
         {/* Logo */}
         <a href="#" className="font-extrabold text-white text-lg flex items-center gap-1 flex-shrink-0">
-          <span className="text-violet-400">●</span> Onyx JobCopilot
+          <span className="text-violet-400">●</span> Onyx Copilot
         </a>
 
         {/* Desktop Nav */}

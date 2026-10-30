@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
           bg-[#08080F]/85 backdrop-blur-2xl border-b border-violet-500/15"
       >
         <Link to="/" className="font-extrabold text-white text-lg flex items-center gap-1 flex-shrink-0">
-          <span className="text-violet-400">●</span> Onyx JobCopilot
+          <span className="text-violet-400">●</span> Onyx Copilot
         </Link>
         <Link
           to="/"
@@ -252,8 +252,8 @@ export default function PrivacyPolicy() {
                   </p>
                   <p className="text-zinc-400">
                     <span className="text-violet-400 mr-2">Phone:</span>
-                    <a href="tel:+918977220902" className="text-violet-300 hover:text-violet-200 transition-colors underline underline-offset-2">
-                      +91 8977220902
+                    <a href="tel:+917569893065" className="text-violet-300 hover:text-violet-200 transition-colors underline underline-offset-2">
+                      +91 7569893065
                     </a>
                   </p>
                 </div>
@@ -269,7 +269,7 @@ export default function PrivacyPolicy() {
       <footer className="bg-[#08080F] border-t border-white/[0.06] py-8 px-8">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-zinc-500 uppercase tracking-wider">
-            © 2024 Onyx JobCopilot. All rights reserved.
+            © 2024 Onyx Copilot. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link to="/terms-and-conditions" className="text-sm text-zinc-500 hover:text-violet-400 transition-colors duration-200">
