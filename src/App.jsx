@@ -17,7 +17,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 function HomePage({ onOpenContact }) {
   return (
     <>
-      <Navbar onOpenContact={onOpenContact} />
+      <Navbar />
       <HeroSection onOpenContact={onOpenContact} />
       <FeaturesSection />
       <MentorSection />
