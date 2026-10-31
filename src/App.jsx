@@ -16,6 +16,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import CancellationRefundPolicy from './pages/CancellationRefundPolicy'
 import ContactUs from './pages/ContactUs'
 import AboutUs from './pages/AboutUs'
+import Pricing from './pages/Pricing'
 
 function HomePage({ onOpenContact }) {
   return (
@@ -48,6 +49,7 @@ export default function App() {
         <Route path="/cancellation-and-refund-policy" element={<CancellationRefundPolicy />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/pricing" element={<Pricing />} />
       </Routes>
       <ContactPopup isOpen={contactOpen} onClose={closeContact} />
     </div>
