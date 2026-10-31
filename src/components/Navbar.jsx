@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const navLinks = ['Features', 'How It Works', 'Mentors', 'Testimonials', 'FAQ']
 
@@ -42,6 +43,13 @@ export default function Navbar() {
               <span className="absolute bottom-0 left-0 h-0.5 bg-violet-500 w-0 group-hover:w-full transition-all duration-300" />
             </a>
           ))}
+          <Link
+            to="/pricing"
+            className="text-sm text-zinc-400 hover:text-white transition-all relative group"
+          >
+            Pricing
+            <span className="absolute bottom-0 left-0 h-0.5 bg-violet-500 w-0 group-hover:w-full transition-all duration-300" />
+          </Link>
         </div>
 
         {/* Right */}
@@ -101,6 +109,19 @@ export default function Navbar() {
                 {link}
               </motion.a>
             ))}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: navLinks.length * 0.1 }}
+            >
+              <Link
+                to="/pricing"
+                onClick={() => setMobileOpen(false)}
+                className="text-2xl text-white font-semibold hover:text-violet-400 transition-colors"
+              >
+                Pricing
+              </Link>
+            </motion.div>
             <motion.a
               href={GET_STARTED_URL}
               target="_blank"
