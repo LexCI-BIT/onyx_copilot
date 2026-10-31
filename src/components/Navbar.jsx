@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const navLinks = ['Features', 'How It Works', 'Mentors', 'Testimonials', 'FAQ']
 
-const GET_STARTED_URL = 'https://onyxcopilot.com'
+const GET_STARTED_URL = 'https://leaps-gamma.vercel.app/'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
