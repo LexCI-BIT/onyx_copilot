@@ -55,6 +55,24 @@ export default function Footer() {
             >
               Terms of Service
             </Link>
+            <Link
+              to="/cancellation-and-refund-policy"
+              className="text-sm text-zinc-500 hover:text-violet-400 transition-colors duration-200"
+            >
+              Cancellation &amp; Refund Policy
+            </Link>
+            <Link
+              to="/about-us"
+              className="text-sm text-zinc-500 hover:text-violet-400 transition-colors duration-200"
+            >
+              About Us
+            </Link>
+            <Link
+              to="/contact-us"
+              className="text-sm text-zinc-500 hover:text-violet-400 transition-colors duration-200"
+            >
+              Contact Us
+            </Link>
             <a
               href="https://www.linkedin.com/company/skoolsbridge/"
               target="_blank"

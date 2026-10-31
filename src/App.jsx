@@ -13,6 +13,9 @@ import Footer from './components/Footer'
 import ContactPopup from './components/ContactPopup'
 import TermsAndConditions from './pages/TermsAndConditions'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import CancellationRefundPolicy from './pages/CancellationRefundPolicy'
+import ContactUs from './pages/ContactUs'
+import AboutUs from './pages/AboutUs'
 
 function HomePage({ onOpenContact }) {
   return (
@@ -42,6 +45,9 @@ export default function App() {
         <Route path="/" element={<HomePage onOpenContact={openContact} />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/cancellation-and-refund-policy" element={<CancellationRefundPolicy />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
       <ContactPopup isOpen={contactOpen} onClose={closeContact} />
     </div>
