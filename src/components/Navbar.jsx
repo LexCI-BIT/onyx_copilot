@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const navLinks = ['Features', 'How It Works', 'Mentors', 'Testimonials', 'FAQ']
 
-const GET_STARTED_URL = 'https://leaps-gamma.vercel.app/'
+const GET_STARTED_URL = 'https://app.onyxcopilot.com/'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
